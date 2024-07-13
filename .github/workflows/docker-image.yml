@@ -1,4 +1,4 @@
-name: Holberton DevOps Essentials
+name: Build and Push Docker image
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        password: ${{ secrets.CR_PAT }}
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
