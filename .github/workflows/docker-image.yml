@@ -1,4 +1,4 @@
-name: devops_essentials
+name: devops-essentials
 
 on:
   push:
